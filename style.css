@@ -1,0 +1,200 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Inter', 'Merriweather', serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.main-content {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(60, 60, 120, 0.08);
+    padding: 32px 24px;
+}
+
+/* Banner */
+.header-banner {
+    margin-bottom: 24px;
+}
+
+.banner-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.main-title {
+    font-family: 'Merriweather', serif;
+    font-size: 2.2rem;
+    color: #4f46e5;
+    margin: 0;
+}
+
+.header-banner img {
+    width: 80px;
+}
+
+/* Seção de entrada */
+.input-section {
+    margin-top: 16px;
+}
+
+/* Títulos */
+.section-title {
+    font-size: 1.2rem;
+    color: #6366f1;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* Contêineres de entrada e botão */
+.input-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #c7d2fe;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Estilos de botão */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-add, .button-reset {
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(60, 60, 120, 0.08);
+}
+
+.button-add:hover, .button-reset:hover {
+    background: #4f46e5;
+}
+
+.button-reset {
+    background: #ef4444;
+    margin-left: 0;
+}
+
+.button-reset:hover {
+    background: #dc2626;
+}
+
+.button-container button.button-reset {
+    margin-top: 12px;
+    width: 100%;
+}
+
+/* Estilos da lista de nomes */
+.name-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+    min-height: 32px;
+}
+
+.name-list li {
+    background: #eef2ff;
+    color: #3730a3;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-bottom: 4px;
+    font-size: 1rem;
+}
+
+/* Estilos da lista de resultados */
+.result-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.result-list li {
+    background: #d1fae5;
+    color: #065f46;
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin-bottom: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Botão de sortear título */
+.button-draw {
+    background: #10b981;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s;
+}
+
+.button-draw:hover {
+    background: #059669;
+}
+
+.button-draw img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
